@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="false"
+
+    android:columnCount="2">
+
+    <TextView
+        android:text="Name"/>
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:ems="10"/>
+
+    <TextView
+        android:text="Phone Number"/>
+
+    <EditText
+        android:id="@+id/phone_edit"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/button"
+        android:text="Time"
+        android:onClick="showTimePickerDialog"/>
+
+    <TextView
+        android:id="@+id/result"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:text="Date"
+        android:onClick="ShowDate"/>
+
+    <TextView
+        android:id="@+id/result2"/>
+
+    <Button
+        android:id="@+id/List"
+        android:text="ALL List"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:onClick="ShowList"/>
+
+
+    </GridLayout>

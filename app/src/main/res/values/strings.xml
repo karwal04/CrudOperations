@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CrudOperations</string>
+    <string name="pick_time">Pick A time</string>
+</resources>
