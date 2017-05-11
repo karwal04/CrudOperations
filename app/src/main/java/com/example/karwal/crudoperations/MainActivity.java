@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         handler=new DatabaseHandler(getApplicationContext());
 
         result=(TextView)findViewById(R.id.result);
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         c1.setDate(result.getText().toString());
         c1.setTime(result2.getText().toString());
         handler.addContact(c1);
+
 
 
         Intent intent=new Intent(this, com.example.karwal.crudoperations.List.class);

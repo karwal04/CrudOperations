@@ -11,10 +11,12 @@ public class Contact {
     String date;
     String time;
 
-    public Contact(int _id,String name,String phone_number){
+    public Contact(int _id,String name,String phone_number,String date,String time){
         this._id=_id;
         this._Name=name;
         this._phone_number=phone_number;
+        this.date=date;
+        this.time=time;
     }
 
     public Contact(){

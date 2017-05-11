@@ -47,5 +47,8 @@ public class UserAdaptor extends CursorAdapter {
         // Return the completed view to render on screen
     }
 
-
+    @Override
+    public Object getItem(int position) {
+        return super.getItem(position);
+    }
 }
