@@ -63,4 +63,19 @@ public class UpdateActivity extends Activity {
         Intent intent=new Intent(this, com.example.karwal.crudoperations.List.class);
         startActivity(intent);
     }
+
+    public void Delete(View view) {
+        Contact newct=new Contact();
+        newct.set_id(id);
+        newct.set_Name(names.getText().toString());
+        newct.set_phone_number(phoneno.getText().toString());
+        newct.setDate(result.getText().toString());
+        newct.setTime(result2.getText().toString());
+        db.deleteContact(newct);
+
+        Intent intent=new Intent(this, com.example.karwal.crudoperations.List.class);
+        startActivity(intent);
+
+
+    }
 }
